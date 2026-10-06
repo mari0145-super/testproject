@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   Contact Us</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">who us</a></li>
+                <li><a href="contact.html"> contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1> contact us</h1>
+        
+        <form action="#" method="POST">
+            <!-- 1. Text -->
+            <div>
+                <label for="name">fullname :</label>
+                <input type="text" id="name" name="fullname" required>
+            </div>
+
+            <!-- 2. Email -->
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- 3. Number -->
+            <div>
+                <label for="age">AGE:</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </div>
+
+            <!-- 4. Date -->
+            <div>
+                <label for="event-date"> DATE</label>
+                <input type="date" id="event-date" name="contact_date">
+            </div>
+
+            <!-- 5. Radio buttons -->
+            <div>
+                <p>gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">female</label>
+            </div>
+
+            <!-- 6. Checkboxes -->
+            <div>
+                <p>priorties:</p>
+                <input type="checkbox" id="web" name="interests" value="web">
+                <label for="web">web development</label>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">design</label>
+            </div>
+
+            <!-- 7. Dropdown menu (Select) -->
+            <div>
+                <label for="subject">any communication :</label>
+                <select id="subject" name="subject">
+                    <option value="general"> general question</option>
+                    <option value="support"> support</option>
+                    <option value="feedback">suggestions</option>
+                </select>
+            </div>
+
+            <!-- 8. Large text box (Textarea) -->
+            <div>
+                <label for="message">message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="  write your message here..."></textarea>
+            </div>
+
+            <button type="submit">send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026   copy right.</p>
+    </footer>
+
+</body>
+</html>

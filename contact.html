@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- الهيدر وشريط التنقل -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- المحتوى الخاص بصفحة اتصل بنا (النموذج المطلوب) -->
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <form action="#" method="post">
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age">
+                </p>
+
+                <p>
+                    <label for="preferred-date">Preferred Date:</label><br>
+                    <input type="date" id="preferred-date" name="preferred_date">
+                </p>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label><br>
+                    <input type="checkbox" id="design" name="interests" value="design">
+                    <label for="design">Design</label>
+                </fieldset>
+
+                <br>
+
+                <p>
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject">
+                        <option value="general">General</option>
+                        <option value="support">Support</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
